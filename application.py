@@ -2,6 +2,10 @@ from flask import Flask
 
 application = Flask(__name__)
 
+@application.route("/")
+def welcome:
+    return 'Welcome to Sample Python app!'
+
 @application.route("/hello")
 @application.route('/hello/<username>')
 def hello(username=None):
