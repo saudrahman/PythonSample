@@ -3,7 +3,7 @@ from flask import Flask
 application = Flask(__name__)
 
 @application.route("/")
-def welcome:
+def welcome():
     return 'Welcome to Sample Python app!'
 
 @application.route("/hello")
